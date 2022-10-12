@@ -1,0 +1,67 @@
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+
+    text-align: center;
+    font-size: 2vh;
+}
+
+.header{
+    grid-column: 1/6;
+    height: 20vh;
+    background-color: rgb(190, 187, 187);
+}
+
+.main{
+    grid-column: 1/4;
+    background-color: rgb(242, 242, 188);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
+}
+
+.left_additional_block, .right_additional_block, .bottom_additional_block{
+    background-color: rgb(235, 199, 133);
+    margin: 5px;
+}
+
+.top_main_block{
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.left_additional_block{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.right_additional_block{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.bottom_additional_block{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.aside{
+    grid-column: 4/6;
+    background-color: rgb(190, 230, 190);
+}
+
+.footer{
+    grid-column: 1/6;
+    background-color: rgb(190, 187, 187);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer_section{
+    background-color: white;
+    margin: 5%;
+    padding: 10px;
+}
